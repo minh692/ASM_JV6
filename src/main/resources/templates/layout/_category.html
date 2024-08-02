@@ -1,0 +1,12 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <div class="card mt-3">
+        <div class="card-header bg-info">
+            <b class="bi bi-list-stars" style="font-family: cursive; color: white;"> Danh mục</b> 
+        </div>
+        <div class="list-group">
+            <a th:each="c:${cates}" th:href="@{|/product/list?cid=${c.id}|}" 
+            class="list-group-item" style="font-family: serif;">[[${c.name}]]</a>
+        </div>
+    </div>
+</div>
+

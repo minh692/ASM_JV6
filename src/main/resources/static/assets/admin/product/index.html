@@ -1,0 +1,29 @@
+<!--  
+<ul class="nav nav-tabs" style="font-variant: small-caps;">
+	<li><a data-toggle="tab" data-target="#edit" href="">Product Edition</a></li>
+	<li class="active"><a data-toggle="tab" data-target="#list" href="">List of Products</a></li>
+</ul>
+<div class="tab-content">
+	<div id="edit" class="tab-pane fade">
+		<div ng-include="'/assets/admin/product/_form.html'"></div>
+	</div>
+	<div id="list" class="tab-pane fade in active">
+		<div ng-include="'/assets/admin/product/_table.html'"></div>
+	</div>
+</div> -->
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" data-target="#edit" href="#edit">Product Edition</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" data-target="#list" href="#list">List of Products</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="edit" ng-include="'/assets/admin/product/_form.html'"></div>
+  <div class="tab-pane container fade" id="list" ng-include="'/assets/admin/product/_table.html'"></div>
+</div>
